@@ -1,0 +1,10 @@
+images:
+  - image: "boredazfcuk/icloudpd"
+    tag: "1.0.1282_20-08-2025"
+    name: "icloudpd"
+  - image: "nextcloud"
+    tag: "31.0.5-apache"
+    name: "nextcloud"
+  - image: "vaultwarden/server"
+    tag: "1.34.3"
+    name: "vaultwarden"

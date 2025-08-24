@@ -1,0 +1,63 @@
+name: Mirror Docker Images to CNB
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: 'Select image to mirror (or leave blank to mirror all)'
+        required: false
+        type: choice
+        options:
+          - ""
+          - "icloudpd"
+          - "nextcloud"
+          - "vaultwarden"
+      version:
+        description: 'Override tag version'
+        required: false
+        type: string
+  push:
+    paths:
+      - '.github/images.yml'
+    branches: [ 'main' ]
+
+jobs:
+  mirror:
+    name: >-
+      Mirror ${{ github.event.inputs.name || 'All Images' }}${{ github.event.inputs.version && format(' (version: {0})', github.event.inputs.version) || '' }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Mirror images
+        env:
+          INPUT_NAME: ${{ github.event.inputs.name }}
+          INPUT_VERSION: ${{ github.event.inputs.version }}
+        run: |
+          images=$(yq -o json '.images' ${{ github.workspace }}/.github/images.yml)
+
+          if [ -n "$INPUT_NAME" ]; then
+          matrix=$(echo "$images" | jq -c --arg name "$INPUT_NAME" '.[] | select(.name == $name)')
+          else
+          matrix=$(echo "$images" | jq -c '.[]')
+          fi
+
+          if [ -z "$matrix" ]; then
+          echo "No matching images found for name: $INPUT_NAME"
+          exit 1
+          fi
+
+          echo "$matrix" | while read -r item; do
+            image=$(echo "$item" | jq -r '.image')
+            name=$(echo "$item" | jq -r '.name')
+            default_tag=$(echo "$item" | jq -r '.tag')
+            tag=${INPUT_VERSION:-$default_tag}
+
+            echo "Mirroring $image:$tag to docker.cnb.cool/${{ vars.CNB_USERNAME }}/${{ vars.CNB_REPOSITORY }}/$name:$tag"
+
+            skopeo copy --all docker://docker.io/${image}:${tag} \
+              docker://docker.cnb.cool/${{ vars.CNB_USERNAME }}/${{ vars.CNB_REPOSITORY }}/${name}:${tag} \
+              --src-creds "${{ vars.DOCKERHUB_USERNAME }}:${{ secrets.DOCKERHUB_TOKEN }}" \
+              --dest-creds "cnb:${{ secrets.CNB_DOCKER_TOKEN }}"
+
+            echo "::notice title=Image Published::https://docker.cnb.cool/${{ vars.CNB_USERNAME }}/${{ vars.CNB_REPOSITORY }}/${name}:${tag}"
+          done
