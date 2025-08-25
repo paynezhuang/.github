@@ -6,6 +6,11 @@ on:
   # 允许手动触发工作流
   workflow_dispatch:
     inputs:
+      # 定义一个名为 "registry" 的输入框
+      registry:
+        description: '覆盖默认的源镜像仓库地址 (留空则自动识别)'
+        required: false
+        type: string
       # 定义一个名为 "name" 的输入框
       name:
         description: '选择要同步的镜像 (留空则同步所有)'
@@ -33,11 +38,6 @@ on:
       # 定义一个名为 "version" 的输入框
       version:
         description: '覆盖默认的镜像版本标签 (tag)'
-        required: false
-        type: string
-      # 新增：定义一个名为 "registry" 的输入框
-      registry:
-        description: '覆盖默认的源镜像仓库地址 (留空则自动识别)'
         required: false
         type: string
   # 当 .github/images.yml 文件被推送到 main 分支时自动触发
