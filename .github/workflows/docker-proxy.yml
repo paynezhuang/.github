@@ -25,9 +25,19 @@ on:
           - "minio"
           - "rocketmq"
           - "rocketmq-dashboard"
+          - "immich-server"
+          - "forgejo"
+          - "immich-machine-learning"
+          - "valkey"
+          - "immich-postgres"
       # 定义一个名为 "version" 的输入框
       version:
         description: '覆盖默认的镜像版本标签 (tag)'
+        required: false
+        type: string
+      # 新增：定义一个名为 "registry" 的输入框
+      registry:
+        description: '覆盖默认的源镜像仓库地址 (留空则自动识别)'
         required: false
         type: string
   # 当 .github/images.yml 文件被推送到 main 分支时自动触发
@@ -69,10 +79,13 @@ jobs:
 
       # 步骤3: 同步镜像
       - name: Mirror images
-        # 设置此步骤中脚本可以使用的环境变量
         env:
-          INPUT_NAME: ${{ github.event.inputs.name }} # 手动触发时输入的镜像名
-          INPUT_VERSION: ${{ github.event.inputs.version }} # 手动触发时输入的版本号
+          # 手动触发时输入的镜像名
+          INPUT_NAME: ${{ github.event.inputs.name }}
+          # 手动触发时输入的版本号
+          INPUT_VERSION: ${{ github.event.inputs.version }}
+          # 手动触发时输入的 registry
+          INPUT_REGISTRY: ${{ github.event.inputs.registry }}
         # 运行的核心脚本
         run: |
           # 使用 yq 工具读取 images.yml 文件并转换为 json 格式
@@ -96,26 +109,49 @@ jobs:
 
           # 循环处理每个找到的镜像配置
           echo "$matrix" | while read -r item; do
+            #
             # 从 json 对象中提取镜像的具体信息
-            image=$(echo "$item" | jq -r '.image') # 原始镜像路径，如 "vaultwarden/server"
-            name=$(echo "$item" | jq -r '.name')   # 在你的仓库中使用的名称，如 "vaultwarden"
-            default_tag=$(echo "$item" | jq -r '.tag') # 默认的版本标签
+            #
+            # 原始镜像路径，如 "vaultwarden/server"
+            image=$(echo "$item" | jq -r '.image')
+            # 在你的仓库中使用的名称，如 "vaultwarden"
+            name=$(echo "$item" | jq -r '.name')
+            # 默认的版本标签
+            default_tag=$(echo "$item" | jq -r '.tag')
+            # 读取 yml 文件中的 registry 字段
+            item_registry=$(echo "$item" | jq -r '.registry')
             
-            # 决定最终使用的版本标签：如果手动输入了 version，则使用它；否则使用默认的 tag
+            #
+            # 决定最终使用的版本标签和 registry
+            # 优先级: 手动输入 > yml 文件定义 > 默认值 'docker.io'
+            #
             tag=${INPUT_VERSION:-$default_tag}
+            registry=${INPUT_REGISTRY:-${item_registry:-docker.io}}
+
+            #
+            # 构建源和目标镜像的完整 URL
+            #
+            source_image_url="docker://${registry}/${image}:${tag}"
+            destination_image_url="docker://docker.cnb.cool/${{ vars.CNB_USERNAME }}/${{ vars.CNB_REPOSITORY }}/${name}:${tag}"
 
             # 打印将要执行的同步操作信息
-            echo "正在同步 $image:$tag 到 docker.cnb.cool/${{ vars.CNB_USERNAME }}/${{ vars.CNB_REPOSITORY }}/$name:$tag"
+            echo "正在同步 $source_image_url 到 $destination_image_url"
 
-            # 使用 skopeo 工具执行镜像复制
-            # skopeo 是一个用于操作容器镜像和镜像仓库的命令行工具
-            skopeo copy \
-              --all \
-              docker://docker.io/${image}:${tag} \
-              docker://docker.cnb.cool/${{ vars.CNB_USERNAME }}/${{ vars.CNB_REPOSITORY }}/${name}:${tag} \
-              --src-creds "${{ vars.DOCKERHUB_USERNAME }}:${{ secrets.DOCKERHUB_TOKEN }}" \
-              --dest-creds "cnb:${{ secrets.CNB_DOCKER_TOKEN }}"
+            #
+            # 使用 bash 数组来动态、安全地构建 skopeo 命令
+            #
+            skopeo_args=( "copy" "--all" "$source_image_url" "$destination_image_url" "--dest-creds" "cnb:${{ secrets.CNB_DOCKER_TOKEN }}" )
 
+            # 仅当源是 Docker Hub 时，才添加 Docker Hub 的拉取凭据
+            if [ "$registry" = "docker.io" ]; then
+              skopeo_args+=( "--src-creds" "${{ vars.DOCKERHUB_USERNAME }}:${{ secrets.DOCKERHUB_TOKEN }}" )
+            fi
+
+            # 执行 skopeo 命令
+            skopeo "${skopeo_args[@]}"
+
+            #
             # 在 GitHub Actions 的日志中输出一个醒目的通知，包含可以直接访问的镜像链接
+            #
             echo "::notice title=镜像发布成功::https://docker.cnb.cool/${{ vars.CNB_USERNAME }}/${{ vars.CNB_REPOSITORY }}/${name}:${tag}"
           done

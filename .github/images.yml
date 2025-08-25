@@ -1,34 +1,84 @@
 images:
-  - image: "boredazfcuk/icloudpd"
+  # Immich 照片管理套件 (Immich Photo Suite)
+  - registry: "ghcr.io"
+    image: "immich-app/immich-server"
+    tag: "v1.108.1"
+    name: "immich-server"
+
+  - registry: "ghcr.io"
+    image: "immich-app/immich-machine-learning"
+    tag: "v1.108.1"
+    name: "immich-machine-learning"
+
+  - registry: "ghcr.io"
+    image: "immich-app/postgres"
+    tag: "14-vectorchord0.4.3-pgvectors0.2.0@sha256:32324a2f41df5de9efe1af166b7008c3f55646f8d0e00d9550c16c9822366b4a"
+    name: "immich-postgres"
+
+  - registry: "docker.io"
+    image: "valkey/valkey"
+    tag: "8-bookworm@sha256:a137a2b60aca1a75130022d6bb96af423fefae4eb55faf395732db3544803280"
+    name: "valkey"
+
+  # 个人云与密码管理 (Personal Cloud & Password Manager)
+  - registry: "docker.io"
+    image: "boredazfcuk/icloudpd"
     tag: "1.0.1282_20-08-2025"
     name: "icloudpd"
-  - image: "nextcloud"
+
+  - registry: "docker.io"
+    image: "nextcloud"
     tag: "31.0.5-apache"
     name: "nextcloud"
-  - image: "vaultwarden/server"
+
+  - registry: "docker.io"
+    image: "vaultwarden/server"
     tag: "1.34.3-alpine"
     name: "vaultwarden"
-  - image: "redis"
+
+  # 通用数据库 (General Databases)
+  - registry: "docker.io"
+    image: "redis"
     tag: "7.4.5"
     name: "redis"
-  - image: "nacos/nacos-server"
-    tag: "v2.5.1"
-    name: "nacos-server"
-  - image: "nacos/nacos-server"
-    tag: "v3.0.3"
-    name: "nacos-server"
-  - image: "mysql"
+
+  - registry: "docker.io"
+    image: "mysql"
     tag: "8.0.43"
     name: "mysql"
-  - image: "bitnami/postgresql"
+
+  - registry: "docker.io"
+    image: "bitnami/postgresql"
     tag: "17.6.0"
     name: "postgresql"
-  - image: "minio/minio"
+
+  # 中间件与开发运维 (Middleware & DevOps)
+  - registry: "docker.io"
+    image: "nacos/nacos-server"
+    tag: "v2.5.1"
+    name: "nacos-server"
+
+  - registry: "docker.io"
+    image: "nacos/nacos-server"
+    tag: "v3.0.3"
+    name: "nacos-server"
+
+  - registry: "docker.io"
+    image: "minio/minio"
     tag: "RELEASE.2025-04-22T22-12-26Z"
     name: "minio"
-  - image: "apache/rocketmq"
+
+  - registry: "docker.io"
+    image: "apache/rocketmq"
     tag: "5.3.3"
     name: "rocketmq"
-  - image: "apacherocketmq/rocketmq-dashboard"
+
+  - registry: "docker.io"
+    image: "apacherocketmq/rocketmq-dashboard"
     tag: "2.0.1"
     name: "rocketmq-dashboard"
+
+  - registry: "code.forgejo.org"
+    image: "forgejo/forgejo"
+    tag: "7.0"
+    name: "forgejo"
