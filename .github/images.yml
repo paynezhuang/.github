@@ -6,7 +6,7 @@ images:
     tag: "31.0.5-apache"
     name: "nextcloud"
   - image: "vaultwarden/server"
-    tag: "1.34.3"
+    tag: "1.34.3-alpine"
     name: "vaultwarden"
   - image: "redis"
     tag: "7.4.5"
