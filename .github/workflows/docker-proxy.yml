@@ -35,6 +35,7 @@ on:
           - "immich-machine-learning"
           - "valkey"
           - "immich-postgres"
+          - "duplicati"
       # 定义一个名为 "version" 的输入框
       version:
         description: '覆盖默认的镜像版本标签 (tag)'

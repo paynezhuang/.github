@@ -36,6 +36,11 @@ images:
     tag: "1.34.3-alpine"
     name: "vaultwarden"
 
+  - registry: "docker.io"
+    image: "duplicati/duplicati"
+    tag: "2.1.2.0"
+    name: "duplicati"
+
   # 通用数据库 (General Databases)
   - registry: "docker.io"
     image: "redis"
