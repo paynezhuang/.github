@@ -2,12 +2,12 @@ images:
   # Immich 照片管理套件 (Immich Photo Suite)
   - registry: "ghcr.io"
     image: "immich-app/immich-server"
-    tag: "v1.139.4"
+    tag: "v1.140.1"
     name: "immich-server"
 
   - registry: "ghcr.io"
     image: "immich-app/immich-machine-learning"
-    tag: "v1.139.4"
+    tag: "v1.140.1"
     name: "immich-machine-learning"
 
   - registry: "ghcr.io"
