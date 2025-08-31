@@ -34,7 +34,7 @@ images:
   # 个人云与密码管理 (Personal Cloud & Password Manager)
   - registry: "docker.io"
     image: "nextcloud"
-    tag: "31.0.5-apache"
+    tag: "31.0.8-apache"
     name: "nextcloud"
 
   - registry: "docker.io"
@@ -86,5 +86,10 @@ images:
 
   - registry: "code.forgejo.org"
     image: "forgejo/forgejo"
-    tag: "12.0.1"
+    tag: "12.0.2"
     name: "forgejo"
+
+  - registry: "code.forgejo.org"
+    image: "forgejo/runner"
+    tag: "9"
+    name: "forgejo-runner"
