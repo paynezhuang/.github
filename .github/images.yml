@@ -2,12 +2,12 @@ images:
   # Immich 照片管理套件 (Immich Photo Suite)
   - registry: "ghcr.io"
     image: "immich-app/immich-server"
-    tag: "v1.140.1"
+    tag: "v1.143.1"
     name: "immich-server"
 
   - registry: "ghcr.io"
     image: "immich-app/immich-machine-learning"
-    tag: "v1.140.1"
+    tag: "v1.143.1"
     name: "immich-machine-learning"
 
   - registry: "ghcr.io"
@@ -23,7 +23,7 @@ images:
   # 数据备份与同步 (Data Backup & Sync)
   - registry: "docker.io"
     image: "boredazfcuk/icloudpd"
-    tag: "1.0.1282_20-08-2025"
+    tag: "1.0.1284_02-09-2025"
     name: "icloudpd"
 
   - registry: "docker.io"
@@ -34,7 +34,7 @@ images:
   # 个人云与密码管理 (Personal Cloud & Password Manager)
   - registry: "docker.io"
     image: "nextcloud"
-    tag: "31.0.8-apache"
+    tag: "31.0.9-apache"
     name: "nextcloud"
 
   - registry: "docker.io"
@@ -66,7 +66,7 @@ images:
 
   - registry: "docker.io"
     image: "nacos/nacos-server"
-    tag: "v3.0.3"
+    tag: "v3.1.0"
     name: "nacos-server"
 
   - registry: "docker.io"
@@ -86,7 +86,7 @@ images:
 
   - registry: "code.forgejo.org"
     image: "forgejo/forgejo"
-    tag: "12.0.2"
+    tag: "12.0.4"
     name: "forgejo"
 
   - registry: "code.forgejo.org"
