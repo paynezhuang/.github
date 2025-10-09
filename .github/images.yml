@@ -2,12 +2,12 @@ images:
   # Immich 照片管理套件 (Immich Photo Suite)
   - registry: "ghcr.io"
     image: "immich-app/immich-server"
-    tag: "v1.143.1"
+    tag: "v2.0.1"
     name: "immich-server"
 
   - registry: "ghcr.io"
     image: "immich-app/immich-machine-learning"
-    tag: "v1.143.1"
+    tag: "v2.0.1"
     name: "immich-machine-learning"
 
   - registry: "ghcr.io"
@@ -34,7 +34,7 @@ images:
   # 个人云与密码管理 (Personal Cloud & Password Manager)
   - registry: "docker.io"
     image: "nextcloud"
-    tag: "31.0.9-apache"
+    tag: "32.0.0-apache"
     name: "nextcloud"
 
   - registry: "docker.io"
