@@ -54,8 +54,8 @@ images:
     name: "mysql"
 
   - registry: "docker.io"
-    image: "bitnami/postgresql"
-    tag: "17.6.0"
+    image: "postgresql"
+    tag: "17.6-alpine"
     name: "postgresql"
 
   # 中间件与开发运维 (Middleware & DevOps)
