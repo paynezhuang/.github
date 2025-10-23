@@ -54,9 +54,9 @@ images:
     name: "mysql"
 
   - registry: "docker.io"
-    image: "postgresql"
+    image: "postgres"
     tag: "17.6-alpine"
-    name: "postgresql"
+    name: "postgres"
 
   # 中间件与开发运维 (Middleware & DevOps)
   - registry: "docker.io"
