@@ -137,6 +137,16 @@ jobs:
             source_image_url="docker://${registry}/${image}:${tag}"
             destination_image_url="docker://docker.cnb.cool/${{ vars.CNB_USERNAME }}/${{ vars.CNB_REPOSITORY }}/${name}:${tag}"
 
+            #
+            # 检查目标镜像是否已存在
+            #
+            echo "检查目标镜像是否已存在: $destination_image_url"
+            if skopeo inspect --creds "cnb:${{ secrets.CNB_DOCKER_TOKEN }}" "$destination_image_url" &>/dev/null; then
+              echo "::notice title=镜像已存在，跳过同步::https://docker.cnb.cool/${{ vars.CNB_USERNAME }}/${{ vars.CNB_REPOSITORY }}/${name}:${tag}"
+              echo "镜像 ${name}:${tag} 已存在于目标仓库，跳过同步"
+              continue
+            fi
+
             # 打印将要执行的同步操作信息
             echo "正在同步 $source_image_url 到 $destination_image_url"
 
