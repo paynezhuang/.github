@@ -99,3 +99,16 @@ images:
     image: "forgejo/runner"
     tag: "11"
     name: "forgejo-runner"
+
+  # 内网穿透 (Intranet Penetration)
+  # https://hub.docker.com/r/snowdreamtech/frpc/tags
+  - registry: "docker.io"
+    image: "snowdreamtech/frpc"
+    tag: "0.64-alpine3.21"
+    name: "frpc"
+
+  # https://hub.docker.com/r/snowdreamtech/frps/tags
+  - registry: "docker.io"
+    image: "snowdreamtech/frps"
+    tag: "0.64-alpine3.21"
+    name: "frps"
