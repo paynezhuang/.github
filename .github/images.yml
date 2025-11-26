@@ -3,12 +3,12 @@ images:
   # https://github.com/immich-app/immich/releases
   - registry: "ghcr.io"
     image: "immich-app/immich-server"
-    tag: "v2.2.3"
+    tag: "v2.3.1"
     name: "immich-server"
 
   - registry: "ghcr.io"
     image: "immich-app/immich-machine-learning"
-    tag: "v2.2.3"
+    tag: "v2.3.1"
     name: "immich-machine-learning"
 
   - registry: "ghcr.io"
@@ -40,7 +40,7 @@ images:
     tag: "32.0.1-apache"
     name: "nextcloud"
 
-  # https://hub.docker.com/r/vaultwarden/server/tags?name=1.
+  # https://hub.docker.com/r/vaultwarden/server/tags?name=1.3
   - registry: "docker.io"
     image: "vaultwarden/server"
     tag: "1.34.3-alpine"
@@ -92,7 +92,7 @@ images:
   # https://forgejo.org/releases/
   - registry: "code.forgejo.org"
     image: "forgejo/forgejo"
-    tag: "13.0.2"
+    tag: "13.0.3"
     name: "forgejo"
 
   - registry: "code.forgejo.org"
@@ -104,11 +104,11 @@ images:
   # https://hub.docker.com/r/snowdreamtech/frpc/tags
   - registry: "docker.io"
     image: "snowdreamtech/frpc"
-    tag: "0.64.0-alpine3.21"
+    tag: "0.65.0-alpine3.22"
     name: "frpc"
 
   # https://hub.docker.com/r/snowdreamtech/frps/tags
   - registry: "docker.io"
     image: "snowdreamtech/frps"
-    tag: "0.64.0-alpine3.21"
+    tag: "0.65.0-alpine3.22"
     name: "frps"
