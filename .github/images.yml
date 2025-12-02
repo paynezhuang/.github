@@ -107,6 +107,13 @@ images:
     tag: "0.65.0-alpine3.22"
     name: "frpc"
 
+  # 备份工具 (Backup)
+  # https://hub.docker.com/r/garethgeorge/backrest/tags
+  - registry: "docker.io"
+    image: "garethgeorge/backrest"
+    tag: "v1.10.1-scratch"
+    name: "backrest"
+
   # https://hub.docker.com/r/snowdreamtech/frps/tags
   - registry: "docker.io"
     image: "snowdreamtech/frps"
