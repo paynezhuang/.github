@@ -25,7 +25,7 @@ images:
   # https://hub.docker.com/r/boredazfcuk/icloudpd/tags
   - registry: "docker.io"
     image: "boredazfcuk/icloudpd"
-    tag: "1.0.1289_18-10-2025"
+    tag: "1.0.1298_06-12-2025"
     name: "icloudpd"
 
   - registry: "docker.io"
@@ -47,30 +47,33 @@ images:
     name: "vaultwarden"
 
   # 通用数据库 (General Databases)
+  # https://hub.docker.com/_/redis/tags?name=7
   - registry: "docker.io"
     image: "redis"
-    tag: "7.4.5"
+    tag: "7.4.7"
     name: "redis"
 
   - registry: "docker.io"
     image: "mysql"
-    tag: "8.0.43"
+    tag: "8.0.44"
     name: "mysql"
 
   - registry: "docker.io"
     image: "postgres"
-    tag: "17.6-alpine"
+    tag: "17.7-alpine"
     name: "postgres"
 
   # 中间件与开发运维 (Middleware & DevOps)
+  # https://hub.docker.com/r/nacos/nacos-server/tags?name=2
   - registry: "docker.io"
     image: "nacos/nacos-server"
-    tag: "v2.5.1"
+    tag: "v2.5.2"
     name: "nacos-server"
 
+  # https://hub.docker.com/r/nacos/nacos-server/tags?name=3
   - registry: "docker.io"
     image: "nacos/nacos-server"
-    tag: "v3.1.0"
+    tag: "v3.1.1"
     name: "nacos-server"
 
   - registry: "docker.io"
@@ -78,9 +81,10 @@ images:
     tag: "RELEASE.2025-04-22T22-12-26Z"
     name: "minio"
 
+  # https://hub.docker.com/r/apache/rocketmq/tags?name=5
   - registry: "docker.io"
     image: "apache/rocketmq"
-    tag: "5.3.3"
+    tag: "5.3.5"
     name: "rocketmq"
 
   - registry: "docker.io"
@@ -107,7 +111,7 @@ images:
     tag: "0.65.0-alpine3.22"
     name: "frpc"
 
-  # https://hub.docker.com/r/snowdreamtech/frps/tags
+  # https://hub.docker.com/r/snowdreamtech/frpc/tags?name=0.6
   - registry: "docker.io"
     image: "snowdreamtech/frps"
     tag: "0.65.0-alpine3.22"
