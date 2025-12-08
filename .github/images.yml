@@ -84,7 +84,7 @@ images:
   # https://hub.docker.com/r/apache/rocketmq/tags?name=5
   - registry: "docker.io"
     image: "apache/rocketmq"
-    tag: "5.3.5"
+    tag: "5.3.4"
     name: "rocketmq"
 
   - registry: "docker.io"
