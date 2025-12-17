@@ -123,3 +123,10 @@ images:
     image: "garethgeorge/backrest"
     tag: "v1.10.1"
     name: "backrest"
+
+  # JRebel 授权服务 (JRebel License Server)
+  # https://hub.docker.com/r/yuxiaoyao520/jrebel-license-active-server
+  - registry: "docker.io"
+    image: "yuxiaoyao520/jrebel-license-active-server"
+    tag: "latest"
+    name: "jrebel-license-active-server"
