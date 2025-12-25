@@ -3,12 +3,12 @@ images:
   # https://github.com/immich-app/immich/releases
   - registry: "ghcr.io"
     image: "immich-app/immich-server"
-    tag: "v2.3.1"
+    tag: "v2.4.1"
     name: "immich-server"
 
   - registry: "ghcr.io"
     image: "immich-app/immich-machine-learning"
-    tag: "v2.3.1"
+    tag: "v2.4.1"
     name: "immich-machine-learning"
 
   - registry: "ghcr.io"
