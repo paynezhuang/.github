@@ -68,7 +68,7 @@ images:
   - registry: "docker.io"
     image: "node"
     tag: "24-alpine"
-    name: "node-24"
+    name: "node"
 
   # https://hub.docker.com/r/nacos/nacos-server/tags?name=2
   - registry: "docker.io"
