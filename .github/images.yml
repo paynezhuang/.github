@@ -64,6 +64,12 @@ images:
     name: "postgres"
 
   # 中间件与开发运维 (Middleware & DevOps)
+  # https://hub.docker.com/_/node/tags?name=24-
+  - registry: "docker.io"
+    image: "node"
+    tag: "24-alpine"
+    name: "node-24"
+
   # https://hub.docker.com/r/nacos/nacos-server/tags?name=2
   - registry: "docker.io"
     image: "nacos/nacos-server"
