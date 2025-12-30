@@ -43,7 +43,7 @@ images:
   # https://hub.docker.com/r/vaultwarden/server/tags?name=1.3
   - registry: "docker.io"
     image: "vaultwarden/server"
-    tag: "1.35.0-alpine"
+    tag: "1.35.1-alpine"
     name: "vaultwarden"
 
   # 通用数据库 (General Databases)
