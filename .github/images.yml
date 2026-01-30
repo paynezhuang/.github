@@ -3,12 +3,12 @@ images:
   # https://github.com/immich-app/immich/releases
   - registry: "ghcr.io"
     image: "immich-app/immich-server"
-    tag: "v2.4.1"
+    tag: "v2.5.2"
     name: "immich-server"
 
   - registry: "ghcr.io"
     image: "immich-app/immich-machine-learning"
-    tag: "v2.4.1"
+    tag: "v2.5.2"
     name: "immich-machine-learning"
 
   - registry: "ghcr.io"
@@ -102,7 +102,7 @@ images:
   # https://forgejo.org/releases/
   - registry: "code.forgejo.org"
     image: "forgejo/forgejo"
-    tag: "13.0.3"
+    tag: "14.0.2"
     name: "forgejo"
 
   - registry: "code.forgejo.org"
@@ -114,20 +114,20 @@ images:
   # https://hub.docker.com/r/snowdreamtech/frpc/tags?name=0.6
   - registry: "docker.io"
     image: "snowdreamtech/frpc"
-    tag: "0.65.0-alpine3.22"
+    tag: "0.66.0-alpine3.22"
     name: "frpc"
 
   # https://hub.docker.com/r/snowdreamtech/frpc/tags?name=0.6
   - registry: "docker.io"
     image: "snowdreamtech/frps"
-    tag: "0.65.0-alpine3.22"
+    tag: "0.66.0-alpine3.22"
     name: "frps"
 
   # 备份工具 (Backup)
   # https://hub.docker.com/r/garethgeorge/backrest/tags
   - registry: "docker.io"
     image: "garethgeorge/backrest"
-    tag: "v1.10.1"
+    tag: "v1.11.2"
     name: "backrest"
 
   # JRebel 授权服务 (JRebel License Server)
