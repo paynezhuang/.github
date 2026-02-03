@@ -38,6 +38,7 @@ on:
           - "duplicati"
           - "frpc"
           - "frps"
+          - "cloudflared"
           - "backrest"
           - "jrebel-license-active-server"
           - "node-24"
