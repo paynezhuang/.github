@@ -3,12 +3,12 @@ images:
   # https://github.com/immich-app/immich/releases
   - registry: "ghcr.io"
     image: "immich-app/immich-server"
-    tag: "v2.5.2"
+    tag: "v2.5.3"
     name: "immich-server"
 
   - registry: "ghcr.io"
     image: "immich-app/immich-machine-learning"
-    tag: "v2.5.2"
+    tag: "v2.5.3"
     name: "immich-machine-learning"
 
   - registry: "ghcr.io"
@@ -53,11 +53,13 @@ images:
     tag: "7.4.7"
     name: "redis"
 
+  # https://hub.docker.com/_/mysql/tags?name=8.0
   - registry: "docker.io"
     image: "mysql"
-    tag: "8.0.44"
+    tag: "8.0.45"
     name: "mysql"
 
+  # https://hub.docker.com/_/postgres/tags?name=17
   - registry: "docker.io"
     image: "postgres"
     tag: "17.7-alpine"
@@ -114,16 +116,17 @@ images:
   # https://hub.docker.com/r/snowdreamtech/frpc/tags?name=0.6
   - registry: "docker.io"
     image: "snowdreamtech/frpc"
-    tag: "0.66.0-alpine3.22"
+    tag: "0.67.0-alpine3.22"
     name: "frpc"
 
   # https://hub.docker.com/r/snowdreamtech/frpc/tags?name=0.6
   - registry: "docker.io"
     image: "snowdreamtech/frps"
-    tag: "0.66.0-alpine3.22"
+    tag: "0.67.0-alpine3.22"
     name: "frps"
 
   # Cloudflare 隧道 (Cloudflare Tunnel)
+  # https://hub.docker.com/r/cloudflare/cloudflared/tags?name=2026
   - registry: "docker.io"
     image: "cloudflare/cloudflared"
     tag: "2026.1.2"
