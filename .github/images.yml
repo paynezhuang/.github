@@ -108,6 +108,11 @@ images:
     name: "forgejo"
 
   - registry: "code.forgejo.org"
+    image: "forgejo/forgejo"
+    tag: "14.0.2-rootless"
+    name: "forgejo"
+
+  - registry: "code.forgejo.org"
     image: "forgejo/runner"
     tag: "11"
     name: "forgejo-runner"
