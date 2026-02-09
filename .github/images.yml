@@ -150,3 +150,10 @@ images:
     image: "yuxiaoyao520/jrebel-license-active-server"
     tag: "latest"
     name: "jrebel-license-active-server"
+
+  # IT Tools 容器
+  # https://github.com/corentinth/it-tools/pkgs/container/it-tools
+  - registry: "ghcr.io"
+    image: "corentinth/it-tools"
+    tag: "2024.10.22-7ca5933"
+    name: "it-tools"
