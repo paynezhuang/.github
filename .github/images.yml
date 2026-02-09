@@ -134,7 +134,7 @@ images:
   # https://hub.docker.com/r/cloudflare/cloudflared/tags?name=2026
   - registry: "docker.io"
     image: "cloudflare/cloudflared"
-    tag: "2026.1.2"
+    tag: "2026.2.0"
     name: "cloudflared"
 
   # 备份工具 (Backup)
