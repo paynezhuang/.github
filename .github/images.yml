@@ -170,3 +170,10 @@ images:
     image: "pocket-id/pocket-id"
     tag: "v2.2"
     name: "pocket-id"
+
+  # Homepage 仪表板
+  # https://github.com/gethomepage/homepage/pkgs/container/homepage
+  - registry: "ghcr.io"
+    image: "gethomepage/homepage"
+    tag: "v1.10.1"
+    name: "homepage"
