@@ -177,3 +177,10 @@ images:
     image: "gethomepage/homepage"
     tag: "v1.10.1"
     name: "homepage"
+
+  # Glances 系统监控
+  # https://hub.docker.com/r/nicolargo/glances
+  - registry: "docker.io"
+    image: "nicolargo/glances"
+    tag: "4.5.0.1"
+    name: "glances"
