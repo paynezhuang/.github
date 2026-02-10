@@ -157,3 +157,10 @@ images:
     image: "corentinth/it-tools"
     tag: "2024.10.22-7ca5933"
     name: "it-tools"
+
+  # Pocket ID 身份认证服务
+  # https://github.com/pocket-id/pocket-id/pkgs/container/pocket-id
+  - registry: "ghcr.io"
+    image: "pocket-id/pocket-id"
+    tag: "v2.2"
+    name: "pocket-id"
