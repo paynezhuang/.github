@@ -35,6 +35,7 @@ on:
           - "forgejo"
           - "woodpecker-server"
           - "woodpecker-agent"
+          - "woodpecker-plugins-git"
           - "immich-machine-learning"
           - "valkey"
           - "immich-postgres"
