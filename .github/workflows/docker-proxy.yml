@@ -23,6 +23,7 @@ on:
           - "icloudpd"
           - "nextcloud"
           - "vaultwarden"
+          - "blinko"
           - "redis"
           - "nacos-server"
           - "mysql"
@@ -45,7 +46,6 @@ on:
           - "it-tools"
           - "pocket-id"
           - "homepage"
-          - "glances"
       # 定义一个名为 "version" 的输入框
       version:
         description: '覆盖默认的镜像版本标签 (tag)'

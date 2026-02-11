@@ -46,6 +46,12 @@ images:
     tag: "1.35.1-alpine"
     name: "vaultwarden"
 
+  # https://hub.docker.com/r/blinkospace/blinko
+  - registry: "docker.io"
+    image: "blinkospace/blinko"
+    tag: "1.8.5"
+    name: "blinko"
+
   # 通用数据库 (General Databases)
   # https://hub.docker.com/_/redis/tags?name=7
   - registry: "docker.io"
@@ -177,10 +183,3 @@ images:
     image: "gethomepage/homepage"
     tag: "v1.10.1"
     name: "homepage"
-
-  # Glances 系统监控
-  # https://hub.docker.com/r/nicolargo/glances
-  - registry: "docker.io"
-    image: "nicolargo/glances"
-    tag: "4.5.0.1"
-    name: "glances"
