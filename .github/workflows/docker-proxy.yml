@@ -33,6 +33,7 @@ on:
           - "rocketmq-dashboard"
           - "immich-server"
           - "forgejo"
+          - "woodpecker-server"
           - "immich-machine-learning"
           - "valkey"
           - "immich-postgres"

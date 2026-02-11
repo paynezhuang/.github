@@ -129,6 +129,12 @@ images:
     tag: "11"
     name: "forgejo-runner"
 
+  # https://github.com/woodpecker-ci/woodpecker/releases
+  - registry: "docker.io"
+    image: "woodpeckerci/woodpecker-server"
+    tag: "v3.13.0"
+    name: "woodpecker-server"
+
   # 内网穿透 (Intranet Penetration)
   # https://hub.docker.com/r/snowdreamtech/frpc/tags?name=0.6
   - registry: "docker.io"
