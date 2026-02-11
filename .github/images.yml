@@ -141,11 +141,11 @@ images:
     tag: "v3.13.0"
     name: "woodpecker-agent"
 
-  # https://github.com/woodpecker-ci/woodpecker/releases
+  # https://github.com/woodpecker-ci/plugin-git/releases
   - registry: "docker.io"
-    image: "woodpeckerci/plugins-git"
+    image: "woodpeckerci/plugin-git"
     tag: "2.8.1"
-    name: "woodpecker-plugins-git"
+    name: "woodpecker-plugin-git"
 
   # 内网穿透 (Intranet Penetration)
   # https://hub.docker.com/r/snowdreamtech/frpc/tags?name=0.6
