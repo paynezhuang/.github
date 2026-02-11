@@ -59,10 +59,28 @@ images:
     tag: "7.4.7"
     name: "redis"
 
+  # https://hub.docker.com/_/redis/tags?name=8
+  - registry: "docker.io"
+    image: "redis"
+    tag: "8.6.0"
+    name: "redis"
+
   # https://hub.docker.com/_/mysql/tags?name=8.0
   - registry: "docker.io"
     image: "mysql"
     tag: "8.0.45"
+    name: "mysql"
+
+  # https://hub.docker.com/_/mysql/tags?name=8.4
+  - registry: "docker.io"
+    image: "mysql"
+    tag: "8.4.8"
+    name: "mysql"
+
+  # https://hub.docker.com/_/mysql/tags?name=9
+  - registry: "docker.io"
+    image: "mysql"
+    tag: "9.6.0"
     name: "mysql"
 
   # https://hub.docker.com/_/postgres/tags?name=17
