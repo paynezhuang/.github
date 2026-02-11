@@ -25,7 +25,7 @@ images:
   # https://hub.docker.com/r/boredazfcuk/icloudpd/tags
   - registry: "docker.io"
     image: "boredazfcuk/icloudpd"
-    tag: "1.0.1298_06-12-2025"
+    tag: "1.0.1314_08-02-2026"
     name: "icloudpd"
 
   - registry: "docker.io"
