@@ -108,10 +108,22 @@ images:
     tag: "v2.5.2"
     name: "nacos-server"
 
+  # https://hub.docker.com/r/nacos/nacos-server/tags?name=2
+  - registry: "docker.io"
+    image: "nacos/nacos-server"
+    tag: "v2.5.2-slim"
+    name: "nacos-server"
+
   # https://hub.docker.com/r/nacos/nacos-server/tags?name=3
   - registry: "docker.io"
     image: "nacos/nacos-server"
     tag: "v3.1.1"
+    name: "nacos-server"
+
+  # https://hub.docker.com/r/nacos/nacos-server/tags?name=3
+  - registry: "docker.io"
+    image: "nacos/nacos-server"
+    tag: "v3.1.1-slim"
     name: "nacos-server"
 
   - registry: "docker.io"
