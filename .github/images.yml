@@ -204,6 +204,13 @@ images:
     tag: "v1.11.2"
     name: "backrest"
 
+  # RustFS 对象存储系统
+  # https://hub.docker.com/r/rustfs/rustfs/tags
+  - registry: "docker.io"
+    image: "rustfs/rustfs"
+    tag: "1.0.0-alpha.83"
+    name: "rustfs"
+
   # JRebel 授权服务 (JRebel License Server)
   # https://hub.docker.com/r/yuxiaoyao520/jrebel-license-active-server
   - registry: "docker.io"
