@@ -45,6 +45,7 @@ on:
           - "cloudflared"
           - "backrest"
           - "rustfs"
+          - "certimate"
           - "jrebel-license-active-server"
           - "node-24"
           - "it-tools"

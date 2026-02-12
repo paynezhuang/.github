@@ -238,3 +238,10 @@ images:
     image: "gethomepage/homepage"
     tag: "v1.10.1"
     name: "homepage"
+
+  # 证书管理 (Certificate Management)
+  # https://hub.docker.com/r/certimate/certimate/tags
+  - registry: "docker.io"
+    image: "certimate/certimate"
+    tag: "v0.4.17"
+    name: "certimate"
