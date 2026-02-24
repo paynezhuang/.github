@@ -27,7 +27,7 @@ on:
           - "redis"
           - "nacos-server"
           - "mysql"
-          - "postgresql"
+          - "postgres"
           - "minio"
           - "rocketmq"
           - "rocketmq-dashboard"
