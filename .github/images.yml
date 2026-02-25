@@ -190,6 +190,12 @@ images:
     tag: "0.67.0-alpine3.22"
     name: "frps"
 
+  # https://hub.docker.com/_/nginx/tags
+  - registry: "docker.io"
+    image: "nginx"
+    tag: "1.29.5-alpine"
+    name: "nginx"
+
   # Cloudflare 隧道 (Cloudflare Tunnel)
   # https://hub.docker.com/r/cloudflare/cloudflared/tags?name=2026
   - registry: "docker.io"

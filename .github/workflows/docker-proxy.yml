@@ -42,6 +42,7 @@ on:
           - "duplicati"
           - "frpc"
           - "frps"
+          - "nginx"
           - "cloudflared"
           - "backrest"
           - "rustfs"
