@@ -25,7 +25,7 @@ images:
   # https://hub.docker.com/r/boredazfcuk/icloudpd/tags
   - registry: "docker.io"
     image: "boredazfcuk/icloudpd"
-    tag: "1.0.1341_23-02-2026"
+    tag: "1.0.1350_27-02-2026"
     name: "icloudpd"
 
   - registry: "docker.io"
@@ -37,7 +37,7 @@ images:
   # https://hub.docker.com/_/nextcloud/tags
   - registry: "docker.io"
     image: "nextcloud"
-    tag: "32.0.6-apache"
+    tag: "33.0.0-apache"
     name: "nextcloud"
 
   # https://hub.docker.com/r/vaultwarden/server/tags?name=1.3
@@ -86,13 +86,13 @@ images:
   # https://hub.docker.com/_/postgres/tags?name=17
   - registry: "docker.io"
     image: "postgres"
-    tag: "17.8-alpine"
+    tag: "17.9-alpine"
     name: "postgres"
 
   # https://hub.docker.com/_/postgres/tags?name=18
   - registry: "docker.io"
     image: "postgres"
-    tag: "18.2-alpine"
+    tag: "18.3-alpine"
     name: "postgres"
 
   # 中间件与开发运维 (Middleware & DevOps)
