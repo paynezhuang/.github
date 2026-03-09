@@ -25,7 +25,7 @@ images:
   # https://hub.docker.com/r/boredazfcuk/icloudpd/tags
   - registry: "docker.io"
     image: "boredazfcuk/icloudpd"
-    tag: "1.0.1350_27-02-2026"
+    tag: "1.0.1359_28-02-2026"
     name: "icloudpd"
 
   - registry: "docker.io"
@@ -146,12 +146,12 @@ images:
   # https://forgejo.org/releases/
   - registry: "code.forgejo.org"
     image: "forgejo/forgejo"
-    tag: "14.0.2"
+    tag: "14.0.3"
     name: "forgejo"
 
   - registry: "code.forgejo.org"
     image: "forgejo/forgejo"
-    tag: "14.0.2-rootless"
+    tag: "14.0.3-rootless"
     name: "forgejo"
 
   - registry: "code.forgejo.org"
@@ -214,7 +214,7 @@ images:
   # https://hub.docker.com/r/rustfs/rustfs/tags
   - registry: "docker.io"
     image: "rustfs/rustfs"
-    tag: "1.0.0-alpha.83"
+    tag: "1.0.0-alpha.85"
     name: "rustfs"
 
   # JRebel 授权服务 (JRebel License Server)
@@ -235,7 +235,7 @@ images:
   # https://github.com/pocket-id/pocket-id/pkgs/container/pocket-id
   - registry: "ghcr.io"
     image: "pocket-id/pocket-id"
-    tag: "v2.3"
+    tag: "v2.4"
     name: "pocket-id"
 
   # Homepage 仪表板
@@ -249,5 +249,5 @@ images:
   # https://hub.docker.com/r/certimate/certimate/tags
   - registry: "docker.io"
     image: "certimate/certimate"
-    tag: "v0.4.17"
+    tag: "v0.4.18"
     name: "certimate"
