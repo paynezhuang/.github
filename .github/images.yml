@@ -193,21 +193,21 @@ images:
   # https://hub.docker.com/_/nginx/tags
   - registry: "docker.io"
     image: "nginx"
-    tag: "1.29.5-alpine"
+    tag: "1.29.6-alpine"
     name: "nginx"
 
   # Cloudflare 隧道 (Cloudflare Tunnel)
   # https://hub.docker.com/r/cloudflare/cloudflared/tags?name=2026
   - registry: "docker.io"
     image: "cloudflare/cloudflared"
-    tag: "2026.2.0"
+    tag: "2026.3.0"
     name: "cloudflared"
 
   # 备份工具 (Backup)
   # https://hub.docker.com/r/garethgeorge/backrest/tags
   - registry: "docker.io"
     image: "garethgeorge/backrest"
-    tag: "v1.12.0"
+    tag: "v1.12.1"
     name: "backrest"
 
   # RustFS 对象存储系统
