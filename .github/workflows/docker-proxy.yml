@@ -24,6 +24,7 @@ on:
           - "nextcloud"
           - "vaultwarden"
           - "blinko"
+          - "onlyoffice"
           - "redis"
           - "nacos-server"
           - "mysql"

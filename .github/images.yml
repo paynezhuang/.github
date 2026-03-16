@@ -52,6 +52,13 @@ images:
     tag: "1.8.5"
     name: "blinko"
 
+  # 办公套件 (Office Suite)
+  # https://hub.docker.com/r/onlyoffice/documentserver/tags
+  - registry: "docker.io"
+    image: "onlyoffice/documentserver"
+    tag: "9.3.1.2"
+    name: "onlyoffice-documentserver"
+
   # 通用数据库 (General Databases)
   # https://hub.docker.com/_/redis/tags?name=7
   - registry: "docker.io"
