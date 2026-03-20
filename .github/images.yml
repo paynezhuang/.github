@@ -3,12 +3,12 @@ images:
   # https://github.com/immich-app/immich/releases
   - registry: "ghcr.io"
     image: "immich-app/immich-server"
-    tag: "v2.5.6"
+    tag: "v2.6.1"
     name: "immich-server"
 
   - registry: "ghcr.io"
     image: "immich-app/immich-machine-learning"
-    tag: "v2.5.6"
+    tag: "v2.6.1"
     name: "immich-machine-learning"
 
   - registry: "ghcr.io"
@@ -221,7 +221,7 @@ images:
   # https://hub.docker.com/r/rustfs/rustfs/tags
   - registry: "docker.io"
     image: "rustfs/rustfs"
-    tag: "1.0.0-alpha.85"
+    tag: "1.0.0-alpha.89"
     name: "rustfs"
 
   # JRebel 授权服务 (JRebel License Server)
@@ -249,12 +249,12 @@ images:
   # https://github.com/gethomepage/homepage/pkgs/container/homepage
   - registry: "ghcr.io"
     image: "gethomepage/homepage"
-    tag: "v1.10.1"
+    tag: "v1.11.0"
     name: "homepage"
 
   # 证书管理 (Certificate Management)
   # https://hub.docker.com/r/certimate/certimate/tags
   - registry: "docker.io"
     image: "certimate/certimate"
-    tag: "v0.4.18"
+    tag: "v0.4.19"
     name: "certimate"
