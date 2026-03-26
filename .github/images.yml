@@ -3,12 +3,12 @@ images:
   # https://github.com/immich-app/immich/releases
   - registry: "ghcr.io"
     image: "immich-app/immich-server"
-    tag: "v2.6.1"
+    tag: "v2.6.2"
     name: "immich-server"
 
   - registry: "ghcr.io"
     image: "immich-app/immich-machine-learning"
-    tag: "v2.6.1"
+    tag: "v2.6.2"
     name: "immich-machine-learning"
 
   - registry: "ghcr.io"
@@ -49,7 +49,7 @@ images:
   # https://hub.docker.com/r/blinkospace/blinko/tags
   - registry: "docker.io"
     image: "blinkospace/blinko"
-    tag: "1.8.5"
+    tag: "1.8.6"
     name: "blinko"
 
   # 办公套件 (Office Suite)
@@ -221,7 +221,7 @@ images:
   # https://hub.docker.com/r/rustfs/rustfs/tags
   - registry: "docker.io"
     image: "rustfs/rustfs"
-    tag: "1.0.0-alpha.89"
+    tag: "1.0.0-alpha.90"
     name: "rustfs"
 
   # JRebel 授权服务 (JRebel License Server)
@@ -256,5 +256,5 @@ images:
   # https://hub.docker.com/r/certimate/certimate/tags
   - registry: "docker.io"
     image: "certimate/certimate"
-    tag: "v0.4.19"
+    tag: "v0.4.20"
     name: "certimate"
