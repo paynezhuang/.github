@@ -3,12 +3,12 @@ images:
   # https://github.com/immich-app/immich/releases
   - registry: "ghcr.io"
     image: "immich-app/immich-server"
-    tag: "v2.6.2"
+    tag: "v2.6.3"
     name: "immich-server"
 
   - registry: "ghcr.io"
     image: "immich-app/immich-machine-learning"
-    tag: "v2.6.2"
+    tag: "v2.6.3"
     name: "immich-machine-learning"
 
   - registry: "ghcr.io"
@@ -37,7 +37,7 @@ images:
   # https://hub.docker.com/_/nextcloud/tags
   - registry: "docker.io"
     image: "nextcloud"
-    tag: "33.0.0-apache"
+    tag: "33.0.1-apache"
     name: "nextcloud"
 
   # https://hub.docker.com/r/vaultwarden/server/tags?name=1.3
@@ -69,7 +69,7 @@ images:
   # https://hub.docker.com/_/redis/tags?name=8
   - registry: "docker.io"
     image: "redis"
-    tag: "8.6.1"
+    tag: "8.6.2"
     name: "redis"
 
   # https://hub.docker.com/_/mysql/tags?name=8.0
@@ -124,13 +124,13 @@ images:
   # https://hub.docker.com/r/nacos/nacos-server/tags?name=3
   - registry: "docker.io"
     image: "nacos/nacos-server"
-    tag: "v3.1.1"
+    tag: "v3.2.0"
     name: "nacos-server"
 
   # https://hub.docker.com/r/nacos/nacos-server/tags?name=3
   - registry: "docker.io"
     image: "nacos/nacos-server"
-    tag: "v3.1.1-slim"
+    tag: "v3.2.0-slim"
     name: "nacos-server"
 
   - registry: "docker.io"
@@ -188,7 +188,7 @@ images:
   # https://hub.docker.com/r/snowdreamtech/frpc/tags?name=0.6
   - registry: "docker.io"
     image: "snowdreamtech/frpc"
-    tag: "0.67.0-alpine3.22"
+    tag: "0.68.0-alpine3.22"
     name: "frpc"
 
   # https://hub.docker.com/r/snowdreamtech/frpc/tags?name=0.6
@@ -200,7 +200,7 @@ images:
   # https://hub.docker.com/_/nginx/tags
   - registry: "docker.io"
     image: "nginx"
-    tag: "1.29.6-alpine"
+    tag: "1.29.7-alpine"
     name: "nginx"
 
   # Cloudflare 隧道 (Cloudflare Tunnel)
@@ -242,14 +242,14 @@ images:
   # https://github.com/pocket-id/pocket-id/pkgs/container/pocket-id
   - registry: "ghcr.io"
     image: "pocket-id/pocket-id"
-    tag: "v2.4"
+    tag: "v2.5"
     name: "pocket-id"
 
   # Homepage 仪表板
   # https://github.com/gethomepage/homepage/pkgs/container/homepage
   - registry: "ghcr.io"
     image: "gethomepage/homepage"
-    tag: "v1.11.0"
+    tag: "v1.12.0"
     name: "homepage"
 
   # 证书管理 (Certificate Management)
