@@ -37,7 +37,7 @@ images:
   # https://hub.docker.com/_/nextcloud/tags
   - registry: "docker.io"
     image: "nextcloud"
-    tag: "33.0.1-apache"
+    tag: "33.0.1-fpm-alpine"
     name: "nextcloud"
 
   # https://hub.docker.com/r/vaultwarden/server/tags?name=1.3
