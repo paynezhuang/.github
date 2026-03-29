@@ -188,13 +188,13 @@ images:
   # https://hub.docker.com/r/snowdreamtech/frpc/tags?name=0.6
   - registry: "docker.io"
     image: "snowdreamtech/frpc"
-    tag: "0.68.0-alpine3.22"
+    tag: "0.68.0-alpine3.23"
     name: "frpc"
 
   # https://hub.docker.com/r/snowdreamtech/frpc/tags?name=0.6
   - registry: "docker.io"
     image: "snowdreamtech/frps"
-    tag: "0.67.0-alpine3.22"
+    tag: "0.68.0-alpine3.23"
     name: "frps"
 
   # https://hub.docker.com/_/nginx/tags
