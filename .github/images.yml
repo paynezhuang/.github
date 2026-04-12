@@ -3,12 +3,12 @@ images:
   # https://github.com/immich-app/immich/releases
   - registry: "ghcr.io"
     image: "immich-app/immich-server"
-    tag: "v2.6.3"
+    tag: "v2.7.4"
     name: "immich-server"
 
   - registry: "ghcr.io"
     image: "immich-app/immich-machine-learning"
-    tag: "v2.6.3"
+    tag: "v2.7.4"
     name: "immich-machine-learning"
 
   - registry: "ghcr.io"
@@ -43,13 +43,13 @@ images:
   # https://hub.docker.com/r/vaultwarden/server/tags?name=1.3
   - registry: "docker.io"
     image: "vaultwarden/server"
-    tag: "1.35.4-alpine"
+    tag: "1.35.5-alpine"
     name: "vaultwarden"
 
   # https://hub.docker.com/r/blinkospace/blinko/tags
   - registry: "docker.io"
     image: "blinkospace/blinko"
-    tag: "1.8.6"
+    tag: "1.8.7"
     name: "blinko"
 
   # 办公套件 (Office Suite)
@@ -124,13 +124,13 @@ images:
   # https://hub.docker.com/r/nacos/nacos-server/tags?name=3
   - registry: "docker.io"
     image: "nacos/nacos-server"
-    tag: "v3.2.0"
+    tag: "v3.2.1"
     name: "nacos-server"
 
   # https://hub.docker.com/r/nacos/nacos-server/tags?name=3
   - registry: "docker.io"
     image: "nacos/nacos-server"
-    tag: "v3.2.0-slim"
+    tag: "v3.2.1-slim"
     name: "nacos-server"
 
   - registry: "docker.io"
@@ -153,12 +153,12 @@ images:
   # https://forgejo.org/releases/
   - registry: "code.forgejo.org"
     image: "forgejo/forgejo"
-    tag: "14.0.3"
+    tag: "14.0.4"
     name: "forgejo"
 
   - registry: "code.forgejo.org"
     image: "forgejo/forgejo"
-    tag: "14.0.3-rootless"
+    tag: "14.0.4-rootless"
     name: "forgejo"
 
   - registry: "code.forgejo.org"
@@ -200,12 +200,12 @@ images:
   # https://hub.docker.com/_/nginx/tags
   - registry: "docker.io"
     image: "nginx"
-    tag: "1.29.7-alpine"
+    tag: "1.29.8-alpine"
     name: "nginx"
 
   - registry: "docker.io"
     image: "nginx"
-    tag: "1.29.7-alpine-slim"
+    tag: "1.29.8-alpine-slim"
     name: "nginx"
 
   # Cloudflare 隧道 (Cloudflare Tunnel)
@@ -226,7 +226,7 @@ images:
   # https://hub.docker.com/r/rustfs/rustfs/tags
   - registry: "docker.io"
     image: "rustfs/rustfs"
-    tag: "1.0.0-alpha.90"
+    tag: "1.0.0-alpha.93"
     name: "rustfs"
 
   # JRebel 授权服务 (JRebel License Server)
@@ -261,5 +261,5 @@ images:
   # https://hub.docker.com/r/certimate/certimate/tags
   - registry: "docker.io"
     image: "certimate/certimate"
-    tag: "v0.4.20"
+    tag: "v0.4.21"
     name: "certimate"
