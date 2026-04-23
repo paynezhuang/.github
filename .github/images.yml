@@ -3,12 +3,12 @@ images:
   # https://github.com/immich-app/immich/releases
   - registry: "ghcr.io"
     image: "immich-app/immich-server"
-    tag: "v2.7.4"
+    tag: "v2.7.5"
     name: "immich-server"
 
   - registry: "ghcr.io"
     image: "immich-app/immich-machine-learning"
-    tag: "v2.7.4"
+    tag: "v2.7.5"
     name: "immich-machine-learning"
 
   - registry: "ghcr.io"
@@ -43,7 +43,7 @@ images:
   # https://hub.docker.com/r/vaultwarden/server/tags?name=1.3
   - registry: "docker.io"
     image: "vaultwarden/server"
-    tag: "1.35.5-alpine"
+    tag: "1.35.7-alpine"
     name: "vaultwarden"
 
   # https://hub.docker.com/r/blinkospace/blinko/tags
@@ -147,12 +147,12 @@ images:
   # https://forgejo.org/releases/
   - registry: "code.forgejo.org"
     image: "forgejo/forgejo"
-    tag: "14.0.4"
+    tag: "15.0.0"
     name: "forgejo"
 
   - registry: "code.forgejo.org"
     image: "forgejo/forgejo"
-    tag: "14.0.4-rootless"
+    tag: "15.0.0-rootless"
     name: "forgejo"
 
   - registry: "code.forgejo.org"
@@ -194,12 +194,12 @@ images:
   # https://hub.docker.com/_/nginx/tags
   - registry: "docker.io"
     image: "nginx"
-    tag: "1.29.8-alpine"
+    tag: "1.30.0-alpine"
     name: "nginx"
 
   - registry: "docker.io"
     image: "nginx"
-    tag: "1.29.8-alpine-slim"
+    tag: "1.30.0-alpine-slim"
     name: "nginx"
 
   # Cloudflare 隧道 (Cloudflare Tunnel)
@@ -220,7 +220,7 @@ images:
   # https://hub.docker.com/r/rustfs/rustfs/tags
   - registry: "docker.io"
     image: "rustfs/rustfs"
-    tag: "1.0.0-alpha.93"
+    tag: "1.0.0-alpha.98"
     name: "rustfs"
 
   # JRebel 授权服务 (JRebel License Server)
@@ -241,7 +241,7 @@ images:
   # https://github.com/pocket-id/pocket-id/pkgs/container/pocket-id
   - registry: "ghcr.io"
     image: "pocket-id/pocket-id"
-    tag: "v2.5"
+    tag: "v2.6.2"
     name: "pocket-id"
 
   # Homepage 仪表板
