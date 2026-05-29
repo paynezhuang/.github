@@ -147,12 +147,12 @@ images:
   # https://forgejo.org/releases/
   - registry: "code.forgejo.org"
     image: "forgejo/forgejo"
-    tag: "15.0.1"
+    tag: "15.0.2"
     name: "forgejo"
 
   - registry: "code.forgejo.org"
     image: "forgejo/forgejo"
-    tag: "15.0.1-rootless"
+    tag: "15.0.2-rootless"
     name: "forgejo"
 
   - registry: "code.forgejo.org"
@@ -182,31 +182,31 @@ images:
   # https://hub.docker.com/r/snowdreamtech/frpc/tags?name=0.6
   - registry: "docker.io"
     image: "snowdreamtech/frpc"
-    tag: "0.68.0-alpine3.23"
+    tag: "0.69.0-alpine3.23"
     name: "frpc"
 
   # https://hub.docker.com/r/snowdreamtech/frpc/tags?name=0.6
   - registry: "docker.io"
     image: "snowdreamtech/frps"
-    tag: "0.68.0-alpine3.23"
+    tag: "0.69.0-alpine3.23"
     name: "frps"
 
   # https://hub.docker.com/_/nginx/tags
   - registry: "docker.io"
     image: "nginx"
-    tag: "1.30.0-alpine"
+    tag: "1.31.1-alpine"
     name: "nginx"
 
   - registry: "docker.io"
     image: "nginx"
-    tag: "1.30.0-alpine-slim"
+    tag: "1.31.1-alpine-slim"
     name: "nginx"
 
   # Cloudflare 隧道 (Cloudflare Tunnel)
   # https://hub.docker.com/r/cloudflare/cloudflared/tags?name=2026
   - registry: "docker.io"
     image: "cloudflare/cloudflared"
-    tag: "2026.3.0"
+    tag: "2026.5.2"
     name: "cloudflared"
 
   # 备份工具 (Backup)
@@ -220,7 +220,7 @@ images:
   # https://hub.docker.com/r/rustfs/rustfs/tags
   - registry: "docker.io"
     image: "rustfs/rustfs"
-    tag: "1.0.0-beta.2"
+    tag: "1.0.0-beta.5"
     name: "rustfs"
 
   # JRebel 授权服务 (JRebel License Server)
@@ -241,19 +241,19 @@ images:
   # https://github.com/pocket-id/pocket-id/pkgs/container/pocket-id
   - registry: "ghcr.io"
     image: "pocket-id/pocket-id"
-    tag: "v2.6.2"
+    tag: "v2.7.0"
     name: "pocket-id"
 
   # Homepage 仪表板
   # https://github.com/gethomepage/homepage/pkgs/container/homepage
   - registry: "ghcr.io"
     image: "gethomepage/homepage"
-    tag: "v1.13.0"
+    tag: "v1.13.1"
     name: "homepage"
 
   # 证书管理 (Certificate Management)
   # https://hub.docker.com/r/certimate/certimate/tags
   - registry: "docker.io"
     image: "certimate/certimate"
-    tag: "v0.4.22"
+    tag: "v0.4.24"
     name: "certimate"
