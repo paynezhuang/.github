@@ -25,7 +25,7 @@ images:
   # https://hub.docker.com/r/boredazfcuk/icloudpd/tags
   - registry: "docker.io"
     image: "boredazfcuk/icloudpd"
-    tag: "1.0.1368_04-05-2026"
+    tag: "1.0.1369_30-05-2026"
     name: "icloudpd"
 
   - registry: "docker.io"
@@ -37,7 +37,7 @@ images:
   # https://hub.docker.com/_/nextcloud/tags
   - registry: "docker.io"
     image: "nextcloud"
-    tag: "33.0.3-fpm-alpine"
+    tag: "34.0.0-fpm-alpine"
     name: "nextcloud"
 
   # https://hub.docker.com/r/vaultwarden/server/tags?name=1.3
@@ -49,7 +49,7 @@ images:
   # https://hub.docker.com/r/blinkospace/blinko/tags
   - registry: "docker.io"
     image: "blinkospace/blinko"
-    tag: "1.8.7"
+    tag: "1.8.8"
     name: "blinko"
 
   # 办公套件 (Office Suite)
@@ -69,7 +69,7 @@ images:
   # https://hub.docker.com/_/redis/tags?name=8
   - registry: "docker.io"
     image: "redis"
-    tag: "8.6.3"
+    tag: "8.6.4"
     name: "redis"
 
   # https://hub.docker.com/_/mysql/tags?name=8.0
@@ -81,25 +81,25 @@ images:
   # https://hub.docker.com/_/mysql/tags?name=8.4
   - registry: "docker.io"
     image: "mysql"
-    tag: "8.4.9"
+    tag: "8.4.10"
     name: "mysql"
 
   # https://hub.docker.com/_/mysql/tags?name=9
   - registry: "docker.io"
     image: "mysql"
-    tag: "9.7.0"
+    tag: "9.7.1"
     name: "mysql"
 
   # https://hub.docker.com/_/postgres/tags?name=17
   - registry: "docker.io"
     image: "postgres"
-    tag: "17.9-alpine"
+    tag: "17.10-alpine"
     name: "postgres"
 
   # https://hub.docker.com/_/postgres/tags?name=18
   - registry: "docker.io"
     image: "postgres"
-    tag: "18.3-alpine"
+    tag: "18.4-alpine"
     name: "postgres"
 
   # 中间件与开发运维 (Middleware & DevOps)
@@ -147,12 +147,12 @@ images:
   # https://forgejo.org/releases/
   - registry: "code.forgejo.org"
     image: "forgejo/forgejo"
-    tag: "15.0.2"
+    tag: "15.0.3"
     name: "forgejo"
 
   - registry: "code.forgejo.org"
     image: "forgejo/forgejo"
-    tag: "15.0.2-rootless"
+    tag: "15.0.3-rootless"
     name: "forgejo"
 
   - registry: "code.forgejo.org"
@@ -163,13 +163,13 @@ images:
   # https://github.com/woodpecker-ci/woodpecker/releases
   - registry: "docker.io"
     image: "woodpeckerci/woodpecker-server"
-    tag: "v3.14.0"
+    tag: "v3.16.0"
     name: "woodpecker-server"
 
   # https://github.com/woodpecker-ci/woodpecker/releases
   - registry: "docker.io"
     image: "woodpeckerci/woodpecker-agent"
-    tag: "v3.14.0"
+    tag: "v3.16.0"
     name: "woodpecker-agent"
 
   # https://github.com/woodpecker-ci/plugin-git/releases
@@ -194,19 +194,19 @@ images:
   # https://hub.docker.com/_/nginx/tags
   - registry: "docker.io"
     image: "nginx"
-    tag: "1.31.1-alpine"
+    tag: "1.31.2-alpine"
     name: "nginx"
 
   - registry: "docker.io"
     image: "nginx"
-    tag: "1.31.1-alpine-slim"
+    tag: "1.31.2-alpine-slim"
     name: "nginx"
 
   # Cloudflare 隧道 (Cloudflare Tunnel)
   # https://hub.docker.com/r/cloudflare/cloudflared/tags?name=2026
   - registry: "docker.io"
     image: "cloudflare/cloudflared"
-    tag: "2026.5.2"
+    tag: "2026.6.1"
     name: "cloudflared"
 
   # 备份工具 (Backup)
@@ -220,7 +220,7 @@ images:
   # https://hub.docker.com/r/rustfs/rustfs/tags
   - registry: "docker.io"
     image: "rustfs/rustfs"
-    tag: "1.0.0-beta.5"
+    tag: "1.0.0-beta.8"
     name: "rustfs"
 
   # JRebel 授权服务 (JRebel License Server)
@@ -248,12 +248,12 @@ images:
   # https://github.com/gethomepage/homepage/pkgs/container/homepage
   - registry: "ghcr.io"
     image: "gethomepage/homepage"
-    tag: "v1.13.1"
+    tag: "v1.13.2"
     name: "homepage"
 
   # 证书管理 (Certificate Management)
   # https://hub.docker.com/r/certimate/certimate/tags
   - registry: "docker.io"
     image: "certimate/certimate"
-    tag: "v0.4.24"
+    tag: "v0.4.26"
     name: "certimate"
