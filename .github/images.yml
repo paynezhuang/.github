@@ -3,12 +3,12 @@ images:
   # https://github.com/immich-app/immich/releases
   - registry: "ghcr.io"
     image: "immich-app/immich-server"
-    tag: "v2.7.5"
+    tag: "v3.0.2"
     name: "immich-server"
 
   - registry: "ghcr.io"
     image: "immich-app/immich-machine-learning"
-    tag: "v2.7.5"
+    tag: "v3.0.2"
     name: "immich-machine-learning"
 
   - registry: "ghcr.io"
@@ -147,12 +147,12 @@ images:
   # https://forgejo.org/releases/
   - registry: "code.forgejo.org"
     image: "forgejo/forgejo"
-    tag: "15.0.3"
+    tag: "15.0.4"
     name: "forgejo"
 
   - registry: "code.forgejo.org"
     image: "forgejo/forgejo"
-    tag: "15.0.3-rootless"
+    tag: "15.0.4-rootless"
     name: "forgejo"
 
   - registry: "code.forgejo.org"
@@ -182,13 +182,13 @@ images:
   # https://hub.docker.com/r/snowdreamtech/frpc/tags?name=0.6
   - registry: "docker.io"
     image: "snowdreamtech/frpc"
-    tag: "0.69.0-alpine3.23"
+    tag: "0.69.1-alpine3.23"
     name: "frpc"
 
   # https://hub.docker.com/r/snowdreamtech/frpc/tags?name=0.6
   - registry: "docker.io"
     image: "snowdreamtech/frps"
-    tag: "0.69.0-alpine3.23"
+    tag: "0.69.1-alpine3.23"
     name: "frps"
 
   # https://hub.docker.com/_/nginx/tags
@@ -206,14 +206,14 @@ images:
   # https://hub.docker.com/r/cloudflare/cloudflared/tags?name=2026
   - registry: "docker.io"
     image: "cloudflare/cloudflared"
-    tag: "2026.6.1"
+    tag: "2026.7.1"
     name: "cloudflared"
 
   # 备份工具 (Backup)
   # https://hub.docker.com/r/garethgeorge/backrest/tags
   - registry: "docker.io"
     image: "garethgeorge/backrest"
-    tag: "v1.13.0"
+    tag: "v1.14.1"
     name: "backrest"
 
   # RustFS 对象存储系统
@@ -241,7 +241,7 @@ images:
   # https://github.com/pocket-id/pocket-id/pkgs/container/pocket-id
   - registry: "ghcr.io"
     image: "pocket-id/pocket-id"
-    tag: "v2.7.0"
+    tag: "v2.10.0"
     name: "pocket-id"
 
   # Homepage 仪表板
