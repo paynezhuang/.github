@@ -3,12 +3,12 @@ images:
   # https://github.com/immich-app/immich/releases
   - registry: "ghcr.io"
     image: "immich-app/immich-server"
-    tag: "v3.0.2"
+    tag: "v3.0.3"
     name: "immich-server"
 
   - registry: "ghcr.io"
     image: "immich-app/immich-machine-learning"
-    tag: "v3.0.2"
+    tag: "v3.0.3"
     name: "immich-machine-learning"
 
   - registry: "ghcr.io"
@@ -37,13 +37,13 @@ images:
   # https://hub.docker.com/_/nextcloud/tags
   - registry: "docker.io"
     image: "nextcloud"
-    tag: "34.0.0-fpm-alpine"
+    tag: "34.0.2-fpm-alpine"
     name: "nextcloud"
 
   # https://hub.docker.com/r/vaultwarden/server/tags?name=1.3
   - registry: "docker.io"
     image: "vaultwarden/server"
-    tag: "1.36.0-alpine"
+    tag: "1.37.0-alpine"
     name: "vaultwarden"
 
   # https://hub.docker.com/r/blinkospace/blinko/tags
@@ -147,17 +147,17 @@ images:
   # https://forgejo.org/releases/
   - registry: "code.forgejo.org"
     image: "forgejo/forgejo"
-    tag: "15.0.4"
+    tag: "16.0.1"
     name: "forgejo"
 
   - registry: "code.forgejo.org"
     image: "forgejo/forgejo"
-    tag: "15.0.4-rootless"
+    tag: "16.0.1-rootless"
     name: "forgejo"
 
   - registry: "code.forgejo.org"
     image: "forgejo/runner"
-    tag: "11"
+    tag: "12.13.2"
     name: "forgejo-runner"
 
   # https://github.com/woodpecker-ci/woodpecker/releases
@@ -194,19 +194,19 @@ images:
   # https://hub.docker.com/_/nginx/tags
   - registry: "docker.io"
     image: "nginx"
-    tag: "1.31.2-alpine"
+    tag: "1.31.3-alpine"
     name: "nginx"
 
   - registry: "docker.io"
     image: "nginx"
-    tag: "1.31.2-alpine-slim"
+    tag: "1.31.3-alpine-slim"
     name: "nginx"
 
   # Cloudflare 隧道 (Cloudflare Tunnel)
   # https://hub.docker.com/r/cloudflare/cloudflared/tags?name=2026
   - registry: "docker.io"
     image: "cloudflare/cloudflared"
-    tag: "2026.7.1"
+    tag: "2026.7.3"
     name: "cloudflared"
 
   # 备份工具 (Backup)
@@ -220,7 +220,7 @@ images:
   # https://hub.docker.com/r/rustfs/rustfs/tags
   - registry: "docker.io"
     image: "rustfs/rustfs"
-    tag: "1.0.0-beta.8"
+    tag: "1.0.0-beta.11"
     name: "rustfs"
 
   # JRebel 授权服务 (JRebel License Server)
@@ -241,7 +241,7 @@ images:
   # https://github.com/pocket-id/pocket-id/pkgs/container/pocket-id
   - registry: "ghcr.io"
     image: "pocket-id/pocket-id"
-    tag: "v2.10.0"
+    tag: "v2.11.0"
     name: "pocket-id"
 
   # Homepage 仪表板
@@ -255,5 +255,5 @@ images:
   # https://hub.docker.com/r/certimate/certimate/tags
   - registry: "docker.io"
     image: "certimate/certimate"
-    tag: "v0.4.26"
+    tag: "v0.4.28"
     name: "certimate"
