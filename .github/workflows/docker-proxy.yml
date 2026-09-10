@@ -30,6 +30,7 @@ on:
           - "mysql"
           - "postgres"
           - "opensearch"
+          - "opensearch-dashboards"
           - "minio"
           - "rocketmq"
           - "rocketmq-dashboard"

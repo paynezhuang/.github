@@ -109,6 +109,13 @@ images:
     tag: "3.8.0"
     name: "opensearch"
 
+  # opensearch-dashboards 
+  # https://hub.docker.com/r/opensearchproject/opensearch-dashboards/tags
+  - registry: "docker.io"
+    image: "opensearchproject/opensearch-dashboards"
+    tag: "3.8.0"
+    name: "opensearch-dashboards"
+
   # 中间件与开发运维 (Middleware & DevOps)
   # https://hub.docker.com/_/node/tags?name=24-
   - registry: "docker.io"
