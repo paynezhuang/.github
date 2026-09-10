@@ -29,6 +29,7 @@ on:
           - "nacos-server"
           - "mysql"
           - "postgres"
+          - "opensearch"
           - "minio"
           - "rocketmq"
           - "rocketmq-dashboard"

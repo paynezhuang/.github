@@ -102,6 +102,13 @@ images:
     tag: "18.6-alpine"
     name: "postgres"
 
+  # opensearch 
+  # https://hub.docker.com/r/opensearchproject/opensearch/tags
+  - registry: "docker.io"
+    image: "opensearchproject/opensearch"
+    tag: "3.8.0"
+    name: "opensearch"
+
   # 中间件与开发运维 (Middleware & DevOps)
   # https://hub.docker.com/_/node/tags?name=24-
   - registry: "docker.io"
